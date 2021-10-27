@@ -4,6 +4,7 @@ function MealCard({meal:{name, description, image}}) {
             <h3>{name}</h3>
             <img src={image} alt={name} />
             <p>{description}</p>
+            <button>Add to Cart</button>
         </>
     )
 }

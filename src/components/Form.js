@@ -1,6 +1,20 @@
 function Form() {
     return (
-        <h3>New item form</h3>
+        <form>
+            <label>Meal Name: </label>
+            <input
+                type='text'
+            ></input>
+            <label>Description: </label>
+            <input
+                type='text'
+            ></input>
+            <label>Image: </label>
+            <input
+                type='text'
+            ></input>
+            <input type='submit'></input>
+        </form>
     )
 }
 
