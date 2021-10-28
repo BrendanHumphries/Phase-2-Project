@@ -1,7 +1,7 @@
 function Header() {
     return (
         <div>
-            <h1>Jui and Brendan's Meal Prep Service</h1>
+            <h1>Jui and Brendan's Meal Kit Service</h1>
         </div>
     )
 }

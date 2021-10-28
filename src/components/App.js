@@ -10,14 +10,70 @@ import About from './About';
 
 function App() {
   const [mealsData, setMealsData] = useState([]);
+  const [cartData, setCartData] = useState([]);
+  const [formData, setFormData] = useState({
+    name: '',
+    description: '',
+    image: '',
+    comments: [],
+    price: ''
+  })
 
-    useEffect(() => {
-        fetch('http://localhost:4000/meals')
-        .then(resp => resp.json())
-        .then(data => {
-          setMealsData(data);
-        })
-    }, []);
+  useEffect(() => {
+      fetch('http://localhost:4000/meals')
+      .then(resp => resp.json())
+      .then(data => {
+        setMealsData(data);
+      })
+  }, []);
+
+  function handleAddToCart(meal) {
+    setCartData([...cartData, meal]);
+  }
+
+  function handleRemoveFromCart(meal) {
+    setCartData(cartData.filter(item => item.id !== meal.id));
+  }
+
+  function handleCommentSubmit(event, comment, meal) {
+    event.preventDefault();
+    fetch(`http://localhost:4000/meals/${meal.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({...meal, comments:[...meal.comments, comment]})
+    })
+    .then(resp => resp.json())
+    .then(data => {
+      const index = mealsData.findIndex(item => item.id === data.id);
+      const mealsDataCopy = [...mealsData];
+      mealsDataCopy[index] = data;
+      setMealsData(mealsDataCopy);
+    })
+  }
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    fetch('http://localhost:4000/meals', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(resp => resp.json())
+    .then(data => {
+      setMealsData([...mealsData, data]);
+      setFormData({
+        name: '',
+        description: '',
+        image: '',
+        comments: [],
+        price: ''
+      })
+    })
+  }
   
   return (
     <div className="App">
@@ -26,13 +82,13 @@ function App() {
       <NavBar />
         <Switch>
           <Route path='/meals'>
-            <Meals mealsData={mealsData}/>
+            <Meals mealsData={mealsData} handleAddToCart={handleAddToCart} handleCommentSubmit={handleCommentSubmit}/>
           </Route>
           <Route path='/cart'>
-            <Cart />
+            <Cart cartData={cartData} handleRemoveFromCart={handleRemoveFromCart}/>
           </Route>
           <Route path='/form'>
-            <Form />
+            <Form formData={formData} setFormData={setFormData} handleFormSubmit={handleFormSubmit}/>
           </Route>
           <Route path='/'>
             <About />

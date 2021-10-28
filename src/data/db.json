@@ -1,16 +1,49 @@
 {
-    "meals": [
-        {
-            "id": 1,
-            "name": "Tacos",
-            "description": "The greatest food to ever exist",
-            "image": "https://brandsitesplatform-res.cloudinary.com/image/fetch/w_570,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_1.0,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2FProject%2FGMI%2Foldelpaso%2Foldelpaso-us%2FRecipes%2Feasy-shredded-chicken-tacos.png%3Fh%3D763%26amp%3Biar%3D0%26amp%3Bw%3D1100%26amp%3Brev%3D6644262a781f454fa99fff52f40312b0"
-        },
-        {
-            "id": 2,
-            "name": "Pasta",
-            "description": "Not as good as tacos",
-            "image": "https://www.foodiecrush.com/wp-content/uploads/2020/05/Penne-Marinara-Sauce-foodiecrush.com-004-683x1024.jpg.webp"
-        }
-    ]
+  "meals": [
+    {
+      "id": 1,
+      "name": "Tacos",
+      "description": "The greatest food to ever exist",
+      "image": "https://brandsitesplatform-res.cloudinary.com/image/fetch/w_570,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_1.0,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2FProject%2FGMI%2Foldelpaso%2Foldelpaso-us%2FRecipes%2Feasy-shredded-chicken-tacos.png%3Fh%3D763%26amp%3Biar%3D0%26amp%3Bw%3D1100%26amp%3Brev%3D6644262a781f454fa99fff52f40312b0",
+      "price": 10,
+      "ingredients": [
+        "Corn Tortillas",
+        "Ground Beef",
+        "Lettuce",
+        "Tomato",
+        "Cheese"
+      ],
+      "comments": [
+        "So good",
+        "The best tacos ever!"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pasta",
+      "description": "Not as good as tacos",
+      "image": "https://www.foodiecrush.com/wp-content/uploads/2020/05/Penne-Marinara-Sauce-foodiecrush.com-004-683x1024.jpg.webp",
+      "price": 9,
+      "ingredients": [
+        "Penne Pasta",
+        "Tomato Sauce",
+        "Cheese",
+        "Basil Leaves"
+      ],
+      "comments": [
+        "Very okay",
+        "The basil is a nice touch"
+      ]
+    },
+    {
+      "name": "Pizza",
+      "description": "Need I say more?",
+      "image": "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=OCAs2j5O",
+      "comments": [
+        "Pizza is cool"
+      ],
+      "price": "15",
+      "id": 3
+    }
+  ]
 }
