@@ -1,8 +1,11 @@
 function Form({formData, setFormData, handleFormSubmit}) {
     function handleFormChange(event) {
-        setFormData({...formData, [event.target.name]:event.target.value});
+        if (event.target.name !== 'price') {
+            setFormData({...formData, [event.target.name]:event.target.value})
+        } else {
+            setFormData({...formData, [event.target.name]:parseInt(event.target.value, 10)})
+        }
     }
-    
     return (
         <div>
             <h2>Have an idea for a new meal kit? Fill out the form below!</h2>

@@ -16,7 +16,7 @@ function App() {
     description: '',
     image: '',
     comments: [],
-    price: ''
+    price: 0
   })
 
   useEffect(() => {
@@ -70,7 +70,7 @@ function App() {
         description: '',
         image: '',
         comments: [],
-        price: ''
+        price: 0
       })
     })
   }
@@ -85,7 +85,7 @@ function App() {
             <Meals mealsData={mealsData} handleAddToCart={handleAddToCart} handleCommentSubmit={handleCommentSubmit}/>
           </Route>
           <Route path='/cart'>
-            <Cart cartData={cartData} handleRemoveFromCart={handleRemoveFromCart}/>
+            <Cart cartData={cartData} setCartData={setCartData} handleRemoveFromCart={handleRemoveFromCart}/>
           </Route>
           <Route path='/form'>
             <Form formData={formData} setFormData={setFormData} handleFormSubmit={handleFormSubmit}/>
