@@ -35,7 +35,7 @@ function MealCard({meal:{name, description, image, comments, price}, meal, handl
             </div>
         )
     } else {
-        return <p>Added to cart!</p>
+        return <p id="added">Added to cart!</p>
     }
 }
 
