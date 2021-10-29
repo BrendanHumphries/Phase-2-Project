@@ -9,10 +9,10 @@ function Cart({cartData, setCartData, handleRemoveFromCart}) {
     
     return (
         <div>
-            <h2>Items in your cart:</h2>
+            <h2 id="itemcart">Items in your cart:</h2>
             {cartData.map(item => <CartItem key={item.id} item={item} handleRemoveFromCart={handleRemoveFromCart} />)}
-            <h3>Total Cost: ${total}</h3>
-            <button onClick={() => setCartData([])}>Checkout</button>
+            <h3 id="costtext">Total Cost: ${total}</h3>
+            <button id="cartbutton" onClick={() => setCartData([])}>Checkout</button>
         </div>
     )
 }

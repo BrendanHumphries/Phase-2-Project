@@ -1,0 +1,186 @@
+#header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 2.5% auto;
+    width: 50%;
+    height: 80%;
+    /* background-color: lightblue; */
+    /* box-shadow: 0 0 2rem 2rem lightcoral; */
+    font-size: 36px;
+    font-family: Brush Script MT,cursive;
+    text-shadow: 2px 2px grey;
+    /* border-color: black;
+    border-radius: 5px; */
+  }
+
+#links {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    margin: 5% auto;
+    width: 40%;
+    height: 100%;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    /* box-shadow: 0 0 3rem 3rem lightcoral; */
+  }
+
+.navBarLink {
+    margin: 20px;
+    font-family: Brush Script MT,cursive;
+    text-shadow: 2px 2px grey;
+}
+
+
+body {
+    background-image: linear-gradient(to left, lightblue, white);
+}
+
+#ourmeals {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: lightgreen; */
+    /* display: block;
+    margin: auto;
+    width: anything under 100% */
+    font-family: Brush Script MT,cursive;
+}
+
+#welcomemsg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 36px;
+    font-family: Brush Script MT,cursive;
+    text-shadow: 2px 2px grey;
+}
+
+#welcomedes {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 28px;
+    font-family: Brush Script MT,cursive;
+}    
+
+#itemcart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 28px;
+    /* text-shadow: 2px 2px grey; */
+}    
+
+#cartbutton {
+    display: block;
+    margin: auto;
+    width: anything under 100%
+}    
+
+#formtext {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: Brush Script MT,cursive;
+    /* text-shadow: 2px 2px grey; */
+}    
+
+#form1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}    
+
+#costtext {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 24px;
+}    
+
+/* .food-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#foodname {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* display: absolute;
+    justify-content: center; */
+    font-family: Brush Script MT,cursive;
+}
+
+#fooddescription {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: Brush Script MT,cursive;
+}
+
+#foodprice {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#mealcomment {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: Brush Script MT,cursive;
+}
+
+#commenttext {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: Brush Script MT,cursive;
+}
+
+#listofcomments {
+    justify-content: center;
+    margin-left: 42%;
+    /* display: block;
+    margin: auto;
+    width: anything under 100% */
+    font-family: Brush Script MT,cursive;
+}
+
+#addbutton {
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 48%; */
+    display: block;
+    margin: auto;
+    width: anything under 100%
+}
+
+.foodimage {
+    /* position: relative;
+    display: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    width: 400px;
+    margin-left: 39%; */
+    display: block;
+    margin: auto;
+    width: 500px;
+    box-shadow: 5px 10px;
+}
+
+/* .food-div {
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    background-color: yellow;
+} */

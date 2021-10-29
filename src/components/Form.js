@@ -8,8 +8,8 @@ function Form({formData, setFormData, handleFormSubmit}) {
     }
     return (
         <div>
-            <h2>Have an idea for a new meal kit? Fill out the form below!</h2>
-            <form onSubmit={handleFormSubmit}>
+            <h2 id="formtext">Have an idea for a new meal kit? Fill out the form below!</h2>
+            <form id="form1" onSubmit={handleFormSubmit}>
                 <label> Meal Name: </label>
                 <input
                     type='text'
