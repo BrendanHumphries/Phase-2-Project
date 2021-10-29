@@ -1,9 +1,9 @@
 function CartItem({item, handleRemoveFromCart}) {
     return (
         <>
-            <h4>{item.name}</h4>
-            <p>$ {item.price}</p>
-            <button onClick={() => handleRemoveFromCart(item)}>Remove From Cart</button>
+            <h4 className="itemincart">{item.name}</h4>
+            <p className="itemincart">$ {item.price}</p>
+            <button className="itemincart" onClick={() => handleRemoveFromCart(item)}>Remove From Cart</button>
         </>
     )
 }
