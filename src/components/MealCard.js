@@ -10,16 +10,16 @@ function MealCard({meal:{name, description, image, comments, price}, meal, handl
     
     if (!isInCart) {
         return (
-            <>
-                <h3>{name}</h3>
-                <img src={image} alt={name} />
-                <p>{description}</p>
-                <p>Price: ${price}</p>
-                <button onClick={() => {
+            <div className="food-div">
+                <h3 id="foodname">{name}</h3>
+                <img src={image} alt={name} className="foodimage" />
+                <p id="fooddescription">{description}</p>
+                <p id="foodprice">Price: ${price}</p>
+                <button id="addbutton" onClick={() => {
                     setIsInCart(!isInCart);
                     handleAddToCart(meal);
-                }}>Add to Cart</button>
-                <form onSubmit={(event) => handleCommentSubmit(event, commentData, meal)}>
+                }} >Add to Cart</button>
+                <form id="mealcomment" onSubmit={(event) => handleCommentSubmit(event, commentData, meal)}>
                     <label>Comment on this meal: </label>
                     <input
                         type='text'
@@ -28,11 +28,11 @@ function MealCard({meal:{name, description, image, comments, price}, meal, handl
                     ></input>
                     <input type='submit'></input>
                 </form>
-                <h3>Comments:</h3>
-                <ul>
+                <h3 id="commenttext">Comments:</h3>
+                <ul id="listofcomments">
                     {comments ? comments.map(comment => <li key={comment}>{comment}</li>) : null}
                 </ul>
-            </>
+            </div>
         )
     } else {
         return <p>Added to cart!</p>

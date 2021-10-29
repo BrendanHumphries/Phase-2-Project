@@ -34,6 +34,44 @@
         "Very okay",
         "The basil is a nice touch"
       ]
+    },
+    {
+      "id": 3,
+      "name": "Steak & Potato",
+      "description": "If you had to order a last meal...",
+      "image": "https://www.slenderkitchen.com/sites/default/files/styles/gsd-1x1/public/recipe_images/grilled-sirloin-steak-potatoes.jpg",
+      "price": 15,
+      "ingredients": [
+        "Ribeye Steak",
+        "Potatoes",
+        "Olive Oil",
+        "Salt",
+        "Pepper",
+        "Garlic Powder"
+      ],
+      "comments": [
+        "Delicious!",
+        "I will never eat anything else!"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Garlic Fried Rice",
+      "description": "Garlic heaven",
+      "image": "https://www.chilitochoc.com/wp-content/uploads/2021/02/garlic-butter-fried-rice-square.jpg",
+      "price": 8,
+      "ingredients": [
+        "Overnight Rice",
+        "Garlic",
+        "Canola Oil",
+        "Butter",
+        "Soy Sauce",
+        "Spring Onion"
+      ],
+      "comments": [
+        "So simple to make!",
+        "Why is this not in every restaurant???"
+      ]
     }
   ]
 }
